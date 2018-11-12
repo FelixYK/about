@@ -4,7 +4,7 @@
 
 <div style="page-break-after: always;"></div>
 
-v0.0.2 [2017-12-15]
+v0.0.1 [2018-11-12]
 
 注意：该内容可能会随时更新，以最新版为准。请在 [GitHub -> Project Description][github-description] 上阅读。
 
