@@ -1,6 +1,6 @@
 # 挑夹棋 AI
 
-- [项目说明](ProjectDescription.md)
+- [项目说明](project-description/ProjectDescription.md)
 
 - [评测环境](JudgeEnvironment.md)
 
