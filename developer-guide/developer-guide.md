@@ -22,23 +22,23 @@
 
 首先，打开一个服务器，在 win-server 的 src 目录下执行 server：
 
-![0](.\0.png)
+![0](0.png)
 
-![1](.\1.png)
+![1](1.png)
 
 然后，以 DEBUG 模式启动一个客户端，表示人类选手：在 win-client 的 src 目录下执行 client -D： 
 
-![2](.\2.png)
+![2](2.png)
 
-![3](.\3.png)
+![3](3.png)
 
 这样，我们就启动了一个人类选手的界面。
 
 最后，我们还需要再启动一个客户端，表示我们的 AI 选手。在 win-client 的 src 目录下执行 client： 
 
-![4](.\4.png)
+![4](4.png)
 
-![5](.\5.png)
+![5](5.png)
 
 这样子，AI 选手就启动了。 
 
@@ -46,17 +46,17 @@
 
 此时，我们应该回到人类选手的客户端，即第一个启动的客户端进行棋子移动（棋子移动的方法为直接用鼠标点击想要移动的棋子，**等到右下角log面板出现 Choose X Y 字样再点击想移动到的目标地点**，由于 c 的命令行下指针有问题，所以如果出现点击没有反应时请**暴击你的鼠标**）： 
 
-![6](.\6.png)
+![6](6.png)
 
-![7](.\7.png)
+![7](7.png)
 
 执行移动命令之后，可以在两个client面板中看到棋盘被刷新，同时通信会显示在右下角滚动的log面板中，可以看到 AI 选手迅速给出了她的选择(A0)。然后，你可以继续进行移动以测试 AI 选手是否 按照预期进行移动。
 
-![8](.\8.png)
+![8](8.png)
 
 最后，你可以继续移动棋子，直到棋局结束： 
 
-![9](.\9.png)
+![9](9.png)
 
 如果 AI 选手的移动符合你的预期，恭喜你，你可以将你的 AI 提交到评测平台上与整个年级 的 AI 进行对抗，看看你的 AI 最终排在哪里。如果 AI 选手的脑回路不符合你的预期结果，请 继续调教直到她正常工作为止。 接下来，我们讲解如何将本地的 AI 移植到评测机上进行评测。 
 
@@ -64,7 +64,7 @@
 
 前面也提到了，本地对战是基于 Socket 协议的，而线上评测平台是基于 std 的。所以我们不 可能直接将本地的 ai.c 文件提交到评测平台上进行对战。幸运的是，我们已经有了一份骨架 项目 win-std-client，你可以将你的 ai 移植到这个项目里，然后再进行提交。 首先打开 win-std-client 项目里面的 main.c 文件，可以看到这份文件的开始部分有几个函数与我们的 ai.c 文件一模一样： 
 
-![10](.\10.png)
+![10](10.png)
 
 所以你只需要把你所编写的 ai.c 文件里从
 
@@ -91,55 +91,55 @@
 
 首先打开评测平台（http://sseclass.tongji.edu.cn/gomoku/），点击 Sign In。
 
-![10](.\sign_in1.png)
+![10](sign_in1.png)
 
 初始的用户名和密码都为学号，第一次登陆后会强制更改密码。
 
-![10](.\sign_in1.png)
+![10](sign_in1.png)
 
 进去了以后请按照要求填写好自己的相关信息：
 
-![profile](.\profile.png)
+![profile](profile.png)
 
 填好后，点击 Submission 按钮，再点击右侧的 Submit New Brain 提交一份 AI
 
-![submission1](.\submission1.png)
+![submission1](submission1.png)
 
 在这个提交页面里，提交你所编写好的移植代码（也可以原封不动的直接提交 win-std-client 里面的 main.c 文件），该代码的线上地址为 https://github.com/sse2018-makyek-fun/std-client/blob/master/main.c.
 
-![submission2](.\submission2.png)
+![submission2](submission2.png)
 
 提交后可以看到正在编译(Compiling)中：
 
-![submission3](.\submission3.png)
+![submission3](submission3.png)
 
 刷新一下，变成 Running 表示正在进行评测：
 
-![submission4](.\submission4.png)
+![submission4](submission4.png)
 
 最后变成 Effective 表示这是一个有效提交（即完成了所有对局），点击 Detail 进行查看对局 详情：
 
-![submission5](.\submission5.png)
+![submission5](submission5.png)
 
 Wow，我们的天然呆选手竟然这么厉害：
 
-![submission6](.\submission6.png)
+![submission6](submission6.png)
 
 可以点击对战结果进行对战详情的查看：
 
-![submission7](.\submission7.png)
+![submission7](submission7.png)
 
 可以看到具体的输赢情况：
 
-![submission8](.\submission8.png)
+![submission8](submission8.png)
 
 最后，我们还可以点击 View 查看本次对局结果的棋盘：
 
-![round3](.\rounds.png)
+![round3](rounds.png)
 
 对局结果的棋子分布如下，可以点击如下按钮，来查看每一步的对局情况。
 
-![round2](.\round2.png)
+![round2](round2.png)
 
 进入逐步查看对局情况的页面后，
 
@@ -147,10 +147,10 @@ Wow，我们的天然呆选手竟然这么厉害：
 - 其中红色的方块为移动棋子之前的位置，绿色的方块为移动棋子之后的位置。
 - 可以点`Current Stdin`来查看双方的大脑程序到当前回合，接收的输入。
 
-![round3](.\round3.png)
+![round3](round3.png)
 
 最后，我们可以查看排行榜，看看自己是第几位：
 
-![scoreboard4](.\scoreboard4.png)
+![scoreboard4](scoreboard4.png)
 
 好了，是时候开发自己的 AI 了，目标是挑夹棋大师！
