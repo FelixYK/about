@@ -1,4 +1,4 @@
-# 黑白棋 AI
+# 挑夹棋 AI
 
 - [项目说明](ProjectDescription.md)
 
