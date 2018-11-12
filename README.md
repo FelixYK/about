@@ -3,3 +3,5 @@
 - [项目说明](ProjectDescription.md)
 
 - [评测环境](JudgeEnvironment.md)
+
+- [人工智障开发指南](developer-guide/developer-guide.md)
