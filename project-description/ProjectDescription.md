@@ -260,7 +260,7 @@ DEBUG Hello World!
 
 见 [GitHub -> Judge Environment][github-judge-env]。
 
-[github-description]: https://github.com/sse2018-makyek-fun/about/blob/master/ProjectDescription.md
+[github-description]: https://github.com/sse2018-makyek-fun/about/blob/master/project-description/ProjectDescription.md
 
 [github-judge-env]: https://github.com/sse2018-makyek-fun/about/blob/master/JudgeEnvironment.md
 
