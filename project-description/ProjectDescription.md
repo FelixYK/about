@@ -276,4 +276,4 @@ DEBUG Hello World!
 
 [github-judge-env]: https://github.com/sse2018-makyek-fun/about/blob/master/JudgeEnvironment.md
 
-[portal]: http://sseclass.tongji.edu.cn/reversi/
+[portal]: http://202.120.167.41:99
